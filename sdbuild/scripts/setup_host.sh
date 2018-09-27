@@ -39,9 +39,21 @@ nfs-common
 zerofree
 u-boot-tools
 rpm2cpio
+xvfb
+chrpath
+socat
+xterm
+unzip
+gcc-multilib
+libsdl1.2-dev
+zlib1g:i386
+diffstat
+libgtk2.0
 EOT
 set -e
 
+sudo dpkg --add-architecture i386
+sudo apt-get update
 sudo apt-get install -y $PACKAGES
 
 # Install up-to-date versions of crosstool and qemu

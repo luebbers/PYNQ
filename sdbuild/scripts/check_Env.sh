@@ -30,6 +30,16 @@ kpartx
 zerofree
 u-boot-tools
 rpm2cpio
+xvfb
+chrpath
+socat
+xterm
+unzip
+gcc-multilib
+libsdl1.2-dev
+zlib1g:i386
+diffstat
+libgtk2.0
 EOT
 
 if [ "$EUID" -eq 0 ] ; then
